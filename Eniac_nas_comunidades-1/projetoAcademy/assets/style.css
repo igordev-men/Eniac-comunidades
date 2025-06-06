@@ -56,8 +56,8 @@ a {
   text-decoration: none;
 }
 .espacamento {
-  display: none;
-  margin-top: 80px;
+    display: block;
+  margin-top: 65px;
 }
 .section {
   display: flex;
@@ -139,6 +139,7 @@ a {
 
 .nav_ul ul li {
   height: 100%;
+    font-family: "Poppins", sans-serif;
   cursor: pointer;
   padding: 8px 18px;
   border-radius: 8px;
@@ -572,6 +573,7 @@ padding: 50px;
 .form-group label {
   display: block;
   margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 .form-group input,
 .form-group textarea {
@@ -619,17 +621,16 @@ button[type="submit"] {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: darkgray;
+  background: rgba(34, 34, 34, 0.55);
   width: 5rem;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #000000;
+  color: #ffffff;
   font-size: 3rem;
 }
-
 .site-footer {
   background-color: #020d71;
   color: #fff;
@@ -677,4 +678,10 @@ button[type="submit"] {
 }
 .footer-bottom p {
   font-size: 19px;
+}.redes_sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
+
