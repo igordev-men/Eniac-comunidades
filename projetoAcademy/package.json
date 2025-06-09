@@ -1,0 +1,23 @@
+{
+  "name": "projetoacademy",
+  "version": "1.0.0",
+  "description": "\"# Eniac-comunidades\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matheus-Madureira-Gomes/Eniac_nas_comunidades.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matheus-Madureira-Gomes/Eniac_nas_comunidades/issues"
+  },
+  "homepage": "https://github.com/Matheus-Madureira-Gomes/Eniac_nas_comunidades#readme",
+  "devDependencies": {
+    "react": "^19.1.0"
+  }
+}
