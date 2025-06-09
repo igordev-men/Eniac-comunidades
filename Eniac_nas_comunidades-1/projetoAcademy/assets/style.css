@@ -283,7 +283,7 @@ a {
   font-size: 4rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 50px auto; 
 }
 .acao-item{
   display: flex;
@@ -450,22 +450,6 @@ a {
   background: rgba(5, 16, 80, 0.9);
   box-shadow: #000000;
 }
-.custom-prev,
-.custom-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 1;
-}
-
-.custom-prev { left: 0; }
-.custom-next { right: 0; }
 
 .custom-info-popup {
   display: none;
@@ -549,6 +533,87 @@ padding: 50px;
   border-radius: 10px;
 
 }
+/* Quando a tela for menor ou igual a 1149px */
+@media (max-width: 1149px) {
+  .custom-carousel {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .custom-item {
+    width: 85%;
+    min-width: unset;
+    height: auto;
+  }
+
+  .custom-saiba-mais {
+    position: static;
+    transform: none;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+/* Para telas ainda menores (celulares, tablets pequenos) */
+@media (max-width: 900px) {
+
+  .custom-item {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .custom-info-popup .popup-content {
+    flex-direction: column;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .conteiner-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .img-acao {
+    display: none;
+  }
+
+  .popup-content h4,
+  .popup-content p {
+    width: 100%;
+  }
+
+  .custom-fechar {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Ultra small devices */
+@media (max-width: 520px) {
+  .txt-acao{
+    font-size: 35px;
+  }
+  .popup-content p {
+    font-size: 25px;
+  }
+  .custom-item {
+    width: 95%;
+  }
+
+  .img-acao {
+    display: none;
+  }
+
+  .popup-content {
+    margin: 0 auto; 
+    padding: 15px;
+  }
+}
+
 
 .contact-form {
   grid-column: span 2;
@@ -591,7 +656,7 @@ body .full-width {
 }
 .form-group input:focus,
 .form-group textarea:focus {
-  box-shadow: 0 0 25px 7px rgb(165, 216, 245);
+  box-shadow: 0 0 15px 2px  #074983;
 }
 .form-group button {
   background-color: #053860;
