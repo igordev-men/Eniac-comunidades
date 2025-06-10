@@ -355,6 +355,7 @@ a {
   grid-template-columns: 1fr 3fr;
   min-width: 100vw;
   height: 540px;
+  padding-bottom: 20px;
   margin: 0 auto;
 }
 .sobre-section img {
@@ -373,6 +374,9 @@ a {
   font-family: Roboto, sans-serif 
 }
 .text-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: 30px;
 }
 
@@ -381,7 +385,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1200px;
+    height: 1000px;
   }
   .text-sobre {
     margin: 20px 0;
@@ -438,7 +442,7 @@ a {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(7, 21, 102, 0.7);
+  background:  #074983;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -447,7 +451,7 @@ a {
   border-radius: 5px;
 }
 .custom-saiba-mais:hover{
-  background: rgba(5, 16, 80, 0.9);
+  background:  #053860;
   box-shadow: #000000;
 }
 
@@ -551,7 +555,7 @@ padding: 50px;
     position: static;
     transform: none;
     margin-top: 15px;
-    width: 100%;
+
   }
 }
 
@@ -700,6 +704,7 @@ button[type="submit"] {
   background-color: #020d71;
   color: #fff;
   padding: 40px 20px 20px;
+  margin-top: 210px;
 }
 
 .footer-container {
