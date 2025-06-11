@@ -3,13 +3,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: 'Open Sans', serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
 a{
   text-decoration: none;
   color: #fff;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,7 +139,7 @@ a {
 
 .nav_ul ul li {
   height: 100%;
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   padding: 8px 18px;
   border-radius: 8px;
@@ -267,6 +267,7 @@ a {
   flex-direction: column;
   height: max-content;
   background-image: linear-gradient(45deg , #000046 , #1CB5E0);
+  
 }
 
 .conteiner-acao{
@@ -411,7 +412,7 @@ a {
 .txt-card{
   color: rgb(19, 26, 84);
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 500;
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -449,6 +450,8 @@ a {
   cursor: pointer;
   width: 300px;
   border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .custom-saiba-mais:hover{
   background:  #053860;
@@ -512,7 +515,7 @@ padding: 50px;
   align-items: center;
   color: #074983;
   font-family: 'popins', sans-serif;
-  font-weight: 800;
+
 }
 .msg-text-content h2{
   margin-bottom: 4rem;
@@ -618,32 +621,137 @@ padding: 50px;
   }
 }
 
-
-.contact-form {
-  grid-column: span 2;
+.voluntario-section {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
 }
-.contact-form .form-grid {
-  border: none;
+
+.voluntario-section h2 {
+  color: #004080;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.voluntario-section p {
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1em;
+}
+
+.btn-voluntario {
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voluntario:hover {
+  background-color: #004080e4;
+}
+
+/* Seção Voluntário Ativo */
+.voluntario-ativo-section {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.voluntario-ativo-section h2 {
+  color: #004080;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.cards-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
-.form-grid legend {
-  font-style: italic;
-  font-size: 28px; 
-  margin-bottom: 3rem;
 
+.voluntario-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
+
+.voluntario-card:hover {
+  transform: translateY(-5px);
+}
+
+.voluntario-card img {
+  width: 250px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.voluntario-card h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.voluntario-card p {
+  color: #555;
+  font-size: 1em;
+}
+
+
+.section-msg {
+  padding: 4rem 2rem;
+  margin-bottom: 6rem; /* evita sobrepor o footer */
+}
+
+.main-msg-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* mantém o título acima */
+  align-items: center;
+}
+
+.msg-text-content {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-grid {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
 .form-group {
-  flex: 1 1 320px;
+  flex: 1 1 300px;
   color: #020d71;
 }
+
+.full-width {
+  flex: 1 1 100%;
+  width: 100%;
+}
+
 .form-group label {
   display: block;
   margin-bottom: 1rem;
   font-family: "Poppins", sans-serif;
 }
+
 .form-group input,
 .form-group textarea {
   border: none;
@@ -651,38 +759,35 @@ padding: 50px;
   background: #fff;
   padding: 1.5rem 2rem;
   width: 100%;
-  font-size: 3rem;
+  font-size: 1.6rem;
   outline: none;
+  box-sizing: border-box;
 }
-body .full-width {
-  width: 100%;
-  flex: 1 1 100%;
-}
-.form-group input:focus,
-.form-group textarea:focus {
-  box-shadow: 0 0 15px 2px  #074983;
-}
+
 .form-group button {
   background-color: #053860;
   color: #ffffff;
   padding: 1.5rem 2rem;
-  font-size: 3rem;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
   border-radius: 8px;
-  border-bottom: none;
+  border: none;
 }
+
 .form-group button:hover {
   background: #110065;
-  color:  #ffffff;
 }
+
 .form-group ::placeholder {
   color: lightgray;
 }
+
 button[type="submit"] {
   text-decoration: none;
-  border-color: none;
 }
+
+
 .close-menu{
   display: none;
 }
@@ -754,4 +859,5 @@ button[type="submit"] {
   gap: 20px;
   margin-top: 20px;
 }
+@media (max-)
 

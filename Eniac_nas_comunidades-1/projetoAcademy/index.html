@@ -13,14 +13,15 @@
 <body>
     <header class="navegacao">
         <div class="nav_logos">
-            <div><img src="assets/imgs/logoEniac.png" alt=""></div>
+            <a href="#section_carrossel"><div><img src="assets/imgs/logoEniac.png" alt=""></div></a>
             <div id="toggle" class="toggle-btn">☰ Menu</div>
         </div>
         <div class="nav_ul">
         <ul>
             <a href="#Sobre"><li>Sobre</li></a>
-            <a href="#Nossas"><li>Nossas ações</li></a>
+            <a href="#nossas"><li>Nossas ações</li></a>
             <a href="#Seja-Voluntario"><li>Seja voluntário</li></a>
+            <a href="#fale_conosco"><li>Fale conosco</li></a>
             <a href="#footer"><li>Contato</li></a>
         </ul>
     </div>
@@ -29,17 +30,18 @@
     <nav id="sidebar" class="sidebar">
         <div><button id="close" class="close-sidebar toggle-btn">X</button></div>
         <h3>Menu</h2>
+        <a href="#section_carrossel"><div>Início</div></a>
         <a href="#Sobre"><div>Sobre</div></a>
         <a href="#nossas"><div>Nossas ações</div></a>
-        
         <a href="#Seja-Voluntario"><div>Seja voluntário</div></a>
+        <a href="#fale_conosco"><div>Fale conosco</div></a>
         <a href="#footer"><div>Contato</div></a>
 
       </nav>
 
       <div class="espacamento"></div>
 
-      <section id="section1" class="intro-section">
+      <section id="section_carrossel" class="intro-section">
         <div class="carrossel">
           <button class="btn prev" onclick="mudarSlide(-1)">&#10094;</button>
           <div class="slides" id="slides">
@@ -72,7 +74,7 @@
 
 
 
-      <section id="#nossas" class="gradient-bg" >
+      <section id="nossas" class="gradient-bg" >
         <h3 class="tl-acao">Nossas ações</h3>
        
        <nav class="conteiner-acao" >
@@ -86,18 +88,18 @@
             <div class="custom-carousel" id="custom-carousel">
             <div class="custom-item"  >
               <img src="assets/imgs/educaçao-1.jpg" alt="Ação 1">
-              <p class="txt-card">Aulas gratuitas de reforço escolar e ENEM </p>
+              <p class="txt-card">Aulas gratuitas de reforço escolar e ENEM.</p>
 
               <button class="custom-saiba-mais" data-info="custom-info1">Conheça o projeto</button>
             </div>
             <div class="custom-item">
               <img src="assets/imgs/eniac-favala.jpg" alt="Ação 2">
-              <p class="txt-card"> Apoio a famílias em situação de insegurança alimentar </p>
+              <p class="txt-card"> Apoio a famílias em situação de insegurança alimentar.</p>
               <button class="custom-saiba-mais" data-info="custom-info2">Conheça o projeto</button>
             </div>
             <div class="custom-item">
               <img src="assets/imgs/jornada.jpg" alt="Ação 3">
-              <p class="txt-card">Preparação e capacitação para o mercado de trabalho</p>
+              <p class="txt-card">Preparação e capacitação para o mercado de trabalho.</p>
               <button class="custom-saiba-mais" data-info="custom-info3">Conheça o projeto</button>
             </div>
           
@@ -116,18 +118,18 @@
               <div class="custom-carousel" id="custom-carousel">
               <div class="custom-item"  >
                 <img src="assets/imgs/gravida.jpg" alt="Ação 4">
-                <p class="txt-card">Apoiamos adolescentes em situação de gravidez ou em estado de violência doméstica</p>
+                <p class="txt-card">Apoiamos adolescentes em situação de gravidez ou em estado de violência doméstica.</p>
   
                 <button class="custom-saiba-mais" data-info="custom-info4">Conheça o projeto</button>
               </div>
               <div class="custom-item">
                 <img src="assets/imgs/roda unida.jpg" alt="Ação 5">
-                <p class="txt-card"> Apoio e suporte a pessoas em vulnerabilidade e vícios  </p>
+                <p class="txt-card"> Apoio e suporte a pessoas em vulnerabilidade e vícios.</p>
                 <button class="custom-saiba-mais" data-info="custom-info5">Conheça o projeto</button>
               </div>
               <div class="custom-item">
                 <img src="assets/imgs/tecnologia.jpg" alt="Ação 6">
-                <p class="txt-card">Ministramos cursos de tecnologia para idosos e pessoas de baixa renda </p>
+                <p class="txt-card">Ministramos cursos de tecnologia para idosos e pessoas de baixa renda.</p>
                 <button class="custom-saiba-mais" data-info="custom-info6">Conheça o projeto</button>
               </div>
             
@@ -216,15 +218,53 @@
       
       <section class="section white-bg" id="Seja-Voluntario">
         <div class="text-content main-content">
-          <h2>lorem</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officia assumenda quisquam ex error doloremque inventore ad corrupti, saepe, nihil delectus et veniam, optio ducimus impedit. Ratione, aut ut. Aspernatur!
-          </p>
+         <!-- Seção Seja Voluntário -->
+<section class="voluntario-section">
+  <h2>Seja Voluntário</h2>
+  <p>
+    Junte-se a nós para transformar vidas! Com o seu tempo e dedicação, podemos alcançar ainda mais pessoas e comunidades.
+    Seja um agente de mudança sendo voluntário em nossos projetos educacionais, sociais ou de arrecadação.
+  </p>
+  <a href="#form-voluntario" class="btn-voluntario">Quero Ser Voluntário</a>
+</section>
+
+<!-- Seção Seja um Voluntário Ativo -->
+<section class="voluntario-ativo-section">
+  <h2>Seja um Voluntário Ativo</h2>
+
+  <a href="#">
+  <div class="cards-container">
+    <div class="voluntario-card">
+      <img src="assets/imgs/sejaVoluntário_ensino.jpg" alt="Ensino">
+      <h3>Ofereça Ensino</h3>
+      <p>Ajude como mentor em oficinas de capacitação ou reforço escolar.</p>
+    </div>
+     </a>
+
+     <a href="#">
+    <div class="voluntario-card">
+      <img src="assets/imgs/sejaVoluntário_ajuda.jpg" alt="Apoio Social">
+      <h3>Ofereça Apoio</h3>
+      <p>Dê suporte emocional e prático a famílias em situação de vulnerabilidade.</p>
+    </div>
+    </a>
+
+    <a href="#">
+    <div class="voluntario-card">
+      <img src="assets/imgs/sejaVoluntário_doação.jpg" alt="Arrecadações">
+      <h3>Participe de Arrecadações</h3>
+      <p>Colabore na coleta e distribuição de alimentos, roupas e materiais escolares.</p>
+    </div>
+  </div>
+  </a>
+
+</section>
+
         </div>
     </section>  
     
 
-     <section id="section7" class="section-msg">
+     <section id="fale_conosco" class="section-msg">
     <div class="main-msg-content msg-content">
       <div class="msg-text-content">
         <h2>Fale conosco:</h2>
