@@ -653,6 +653,42 @@ padding: 50px;
 .btn-voluntario:hover {
   background-color: #004080e4;
 }
+.botoes-apoio {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-patrocinador,
+.btn-doacao {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-patrocinador {
+  background-color: #004080;
+  color: white;
+}
+
+.btn-patrocinador:hover {
+  background-color: #004080e4;
+  color: white;
+}
+
+.btn-doacao {
+ background-color: #004080;
+  color: white;
+}
+
+.btn-doacao:hover {
+   background-color: #004080e4;
+}
+
 
 /* Seção Voluntário Ativo */
 .voluntario-ativo-section {
