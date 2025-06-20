@@ -691,6 +691,38 @@ padding: 50px;
 .btn-doacao:hover {
    background-color: #004080e4;
 }
+.precisa-ajuda {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.precisa-ajuda h2 {
+  color: #004080;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.precisa-ajuda p {
+  color: #333;
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.btn-ajuda {
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ajuda:hover {
+  background-color:  #004080e4;
+}
 
 
 /* Seção Voluntário Ativo */
