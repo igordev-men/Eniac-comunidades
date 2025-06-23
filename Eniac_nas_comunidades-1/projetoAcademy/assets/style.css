@@ -294,7 +294,7 @@ a {
 .carrossel {
     width: 100vw;
     height: calc(100vw * 9 / 16);
-    max-height: 80vh;
+    max-height: 90vh;
     position: relative;
     overflow: hidden;
 }
