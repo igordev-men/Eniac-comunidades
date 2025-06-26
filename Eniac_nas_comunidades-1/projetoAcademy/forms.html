@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Ajuda - Eniac nas Comunidades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #0072c6;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            margin-top: 10px;
+        }
+
+        .checkbox-group input {
+            margin-right: 8px;
+        }
+
+        .termos {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #0072c6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #005a9c;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulário de Pedido de Ajuda</h2>
+
+    <form action="#" method="post">
+        <label>Nome Completo*</label>
+        <input type="text" name="nome" required>
+
+        <label>Data de Nascimento</label>
+        <input type="date" name="data_nascimento">
+
+        <label>Telefone/WhatsApp*</label>
+        <input type="tel" name="telefone" required>
+
+        <label>E-mail (opcional)</label>
+        <input type="email" name="email">
+
+        <label>Endereço (Bairro, Cidade)</label>
+        <input type="text" name="endereco">
+
+        <label>Selecione os tipos de ajuda que você precisa:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="ajuda" value="alimentacao"> Alimentação (Fome, cesta básica)<br>
+            <input type="checkbox" name="ajuda" value="roupas"> Roupas e Calçados<br>
+            <input type="checkbox" name="ajuda" value="educacao"> Apoio Educacional<br>
+            <input type="checkbox" name="ajuda" value="psicologico"> Apoio Psicológico<br>
+            <input type="checkbox" name="ajuda" value="gravidez"> Gravidez na Adolescência<br>
+            <input type="checkbox" name="ajuda" value="drogas"> Combate às Drogas<br>
+            <input type="checkbox" name="ajuda" value="outro"> Outro<br>
+        </div>
+
+        <label>Descreva sua situação*</label>
+        <textarea name="descricao" rows="5" required></textarea>
+
+        <label>Preferência de Contato:</label>
+        <select name="contato_preferido">
+            <option value="whatsapp">WhatsApp</option>
+            <option value="telefone">Telefone</option>
+            <option value="email">E-mail</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <div class="termos">
+            <input type="checkbox" name="termos" required>
+            <label>Li e concordo com os <a href="#">termos de privacidade</a>.</label>
+        </div>
+
+        <button type="submit">Enviar Pedido de Ajuda</button>
+    </form>
+</div>
+
+</body>
+</html>
